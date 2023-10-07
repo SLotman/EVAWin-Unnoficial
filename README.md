@@ -1,6 +1,6 @@
 # EVAWin-Unnoficial
-Unnoficial version 0.5 of EVAWin
-Compiled with Visual Studio 2017
+Unnoficial version 0.5 of EVAWin<br/>
+Compiled with Visual Studio 2017<br/><br/>
 
 Translated from Japanese to English by Takamichi Suzukawa and Leonard Silva de Oliveira <br/>
 Original author website at [https://www.vector.co.jp/authors/VA007898/](https://hp.vector.co.jp/authors/VA007898/msx/index.html)
