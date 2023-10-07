@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Evawin", "Evawin.vcxproj", "{128B9565-F276-4498-BD03-13834C71F1B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{128B9565-F276-4498-BD03-13834C71F1B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{128B9565-F276-4498-BD03-13834C71F1B7}.Debug|x86.Build.0 = Debug|Win32
+		{128B9565-F276-4498-BD03-13834C71F1B7}.Release|x86.ActiveCfg = Release|Win32
+		{128B9565-F276-4498-BD03-13834C71F1B7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15C49D92-7FEE-4D76-A0B0-3C1081FF993E}
+	EndGlobalSection
+EndGlobal

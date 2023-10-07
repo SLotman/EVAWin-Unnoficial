@@ -1,0 +1,251 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "rc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MAIN                    ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDTB_BMP                BITMAP  MOVEABLE PURE   "button.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    IDM_OPEN
+        MENUITEM "&Close",                      IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Size"
+        BEGIN
+            MENUITEM "x1",                          IDM_STRETCH1
+            MENUITEM "x2",                          IDM_STRETCH2
+            MENUITEM "x3",                          IDM_STRETCH3
+            MENUITEM "x4",                          IDM_STRETCH4
+        END
+        POPUP "&Prop"
+        BEGIN
+            MENUITEM "&Not adjust",                 IDM_ASPECT1
+            MENUITEM "&MSX ratio",                  IDM_ASPECT0
+            MENUITEM "&Window size",                IDM_ASPECT2
+        END
+        MENUITEM "&Monochrome",                 IDM_MONO
+        MENUITEM "Force Screen 8",              IDM_SCREEN8
+        MENUITEM "Dither-&free",                IDM_FILTER
+        MENUITEM "Scanlines",                   IDM_SCANLINES
+        MENUITEM "&Adjust display...",          IDM_ADJUST
+    END
+    POPUP "&Play"
+    BEGIN
+        MENUITEM "&Play",                       IDM_PLAY
+        MENUITEM "Pa&use",                      IDM_PAUSE
+        MENUITEM "&Stop",                       IDM_STOP
+        MENUITEM "Re&wind",                     IDM_REW
+        MENUITEM "&Forward",                    IDM_FRD
+        MENUITEM SEPARATOR
+        MENUITEM "&Repeat",                     IDM_REPEAT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ADJUSTDLG DIALOG DISCARDABLE  1, 65535, 88, 68
+STYLE WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_DLGMODALFRAME
+CAPTION "Adjust screen"
+FONT 9, "system"
+BEGIN
+    LTEXT           "&Bright",-1,8,12,40,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT1,48,10,20,14,0,WS_EX_CLIENTEDGE
+    CONTROL         "UpDown1",IDC_UPDOWN1,"msctls_updown32",UDS_SETBUDDYINT,
+                    68,10,9,14
+    LTEXT           "&Contrast",-1,8,28,40,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT2,48,26,20,14,0,WS_EX_CLIENTEDGE
+    CONTROL         "UpDown2",IDC_UPDOWN2,"msctls_updown32",UDS_SETBUDDYINT,
+                    68,26,9,14
+    PUSHBUTTON      "&Close",IDCANCEL,48,48,36,14,BS_CENTER
+END
+
+VERSIONDLG DIALOGEX 0, 0, 220, 111
+STYLE DS_3DLOOK | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_LEFTSCROLLBAR
+CAPTION "About EVAWin"
+FONT 9, "system"
+BEGIN
+    ICON            "MAIN",-1,4,4,20,20
+    LTEXT           "EVAWin -  EVA player for Windows",-1,28,8,116,8,NOT 
+                    WS_GROUP
+    LTEXT           "Version",-1,3,92,24,8,NOT WS_GROUP
+    LTEXT           "0.00",200,31,92,19,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "&Close",IDCLOSE,168,93,50,14,BS_CENTER
+    LTEXT           "Translated from Japanese to English by",-1,4,24,208,8,
+                    NOT WS_GROUP
+    LTEXT           "Takamichi Suzukawa (takatemp@i.bekkoame.ne.jp)",-1,4,32,
+                    208,8,NOT WS_GROUP
+    LTEXT           "WEB   : http://www.vector.co.jp/authors/VA007898/",-1,4,
+                    74,212,8,NOT WS_GROUP
+    LTEXT           "E-MAIL: buppu@mc.neweb.ne.jp",-1,4,82,156,8,NOT 
+                    WS_GROUP
+    LTEXT           "Leonard Silva de Oliveira (leonard.oliveira@apis.com.br)",
+                    -1,4,40,208,8,NOT WS_GROUP
+    LTEXT           "Contact the author at : (Japanese language only)",-1,4,
+                    66,212,8,NOT WS_GROUP
+    LTEXT           "Unnoficial version by SLotman",-1,4,48,208,8,NOT 
+                    WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VERSIONINFO_0 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Made by BUPPU\0"
+            VALUE "FileDescription", "EVA Player for Windows\0"
+            VALUE "FileVersion", "0.5\0"
+            VALUE "InternalName", "EVAWIN\0"
+            VALUE "LegalCopyright", "Copyright © BUPPU\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EVAWIN.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""rc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "VERSIONDLG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 93
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

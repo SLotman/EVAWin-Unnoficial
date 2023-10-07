@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Evawin - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\SWAP\RSP81E0.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/Evawin.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\msxcd\utils\Pc\Gfx\avi2eva\evawin-e\Evaesrc\Eva.cpp"
+]
+Creating command line "cl.exe @C:\SWAP\RSP81E0.TMP" 
+Creating temporary file "C:\SWAP\RSP81E1.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comctl32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Evawin.pdb" /debug /machine:I386 /out:"Debug/Evawin.exe" /pdbtype:sept 
+".\Debug\Eva.obj"
+".\Debug\Evawin.obj"
+".\Debug\Yjk.obj"
+".\Debug\Evawin.res"
+]
+Creating command line "link.exe @C:\SWAP\RSP81E1.TMP"
+<h3>Output Window</h3>
+Compiling...
+Eva.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Evawin.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
